@@ -1,0 +1,43 @@
+{
+  "name": "optty",
+  "title": "Optty",
+  "license": "GPL-3.0-or-later",
+  "version": "0.0.1",
+  "description": "optty",
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "build": "wp-scripts build",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "format:js": "wp-scripts format-js",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:md:docs": "wp-scripts lint-md-docs",
+    "lint:md:js": "wp-scripts lint-md-js",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "start": "wp-scripts start",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js",
+    "prepare": "husky install",
+    "lint:php": "./vendor/bin/phpcs .",
+    "format:php": "./vendor/bin/phpcbf ."
+  },
+  "devDependencies": {
+    "@woocommerce/dependency-extraction-webpack-plugin": "1.6.0",
+    "@woocommerce/eslint-plugin": "1.1.0",
+    "@wordpress/prettier-config": "1.1.1",
+    "@wordpress/scripts": "12.6.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "husky": "7.0.4",
+    "prettier": "2.5.1"
+  },
+  "resolutions": {
+    "ansi-regex": "5.0.1",
+    "glob-parent": "5.1.2",
+    "node-notifier": "8.0.1",
+    "nth-check": "2.0.1",
+    "trim": "0.0.3",
+    "markdown-it": "12.3.2"
+  }
+}
